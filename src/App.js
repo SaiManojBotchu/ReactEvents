@@ -1,23 +1,15 @@
-import logo from './logo.svg';
+import WiseSquareWithProps from './01_events/WiseSquareWithProps';
+import WiseSquare from './01_events/WiseSquare';
+// import Form from './01_events/Form';
+// import CopyDemo from './01_events/CopyDemo';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='App'>
+      <h1>React Events!</h1>
+      <WiseSquare />
+      <WiseSquareWithProps />
     </div>
   );
 }
