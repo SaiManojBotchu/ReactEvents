@@ -17,7 +17,7 @@ class BetterNumberList extends Component {
       <div className='NumberList'>
         <h1>Better Number List</h1>
         {this.state.nums.map(n => (
-          <BetterNumberItem value={n} remove={this.remove} />
+          <BetterNumberItem key={n} value={n} remove={this.remove} />
         ))}
       </div>
     );
@@ -25,7 +25,6 @@ class BetterNumberList extends Component {
 }
 
 export default BetterNumberList;
-
 
 /**  How data flows  **/
 // 1. A parent component defines a function

@@ -21,7 +21,7 @@ class ButtonList extends Component {
           const btnStyle = { backgroundColor: c };
           return (
             // Not a good practice to pass arguments
-            // because it creates a new function every it renders
+            // because it creates a new function everytime it renders
             <button style={btnStyle} onClick={() => this.changeColor(c)}>
               Click me
             </button>

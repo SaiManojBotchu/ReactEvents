@@ -11,11 +11,13 @@ class WiseSquare extends Component {
       'Not everything that is faced can be changed, but nothing can be changed until it is faced.'
     ]
   };
-  // best practice for method binding
+
   constructor(props) {
     super(props);
+    // best practice for method binding
     this.dispenseWisdom = this.dispenseWisdom.bind(this);
   }
+
   dispenseWisdom() {
     let { messages } = this.props;
     let rIndex = Math.floor(Math.random() * messages.length);
@@ -31,8 +33,8 @@ class WiseSquare extends Component {
   render() {
     return (
       <div className='WiseSquare' onMouseEnter={this.dispenseWisdom}>
-      {/* <div className='WiseSquare' onMouseEnter={this.dispenseWisdom.bind(this)}> */}
-      {/* <div className='WiseSquare' onMouseEnter={() => this.dispenseWisdom}> */}
+        {/* <div className='WiseSquare' onMouseEnter={this.dispenseWisdom.bind(this)}> */}
+        {/* <div className='WiseSquare' onMouseEnter={() => this.dispenseWisdom}> */}
         😎
       </div>
     );
